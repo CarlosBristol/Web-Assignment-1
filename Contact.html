@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <head>
     <title>Contact</title>
+    <link rel="stylesheet" href="Contact_desktop.css" media="screen and (min-width: 1000px)" />
 </head>
 <body>
+    <header>
     <p>Contact</p>
+    </header>
+
     <nav>
         <ul>
             <li><a href="http://127.0.0.1:5500/Index.html">Home Page</a></li>
@@ -14,16 +18,15 @@
         </ul>
     </nav>
 
+<main>
     <div class="container">
-        <div class="content-box">
-            <div class="=left"></div>
-            <div class="right">
-                <h>Contact Us</h>
-                <input type="text" class="contact" placeholder="Enter Name">
-                <input type="email" class="contact" placeholder="Enter Email">
-                <textarea class="contact" placeholder="Message"></textarea>
-            </div>
-        </div>
+        <form action="mailto:carlos.bristol20@my.northampton.ac.uk?subject=Contact Form" method="POST">
+        <h2>Contact Us</h2>
+        <input type="text" class="contact" placeholder="Enter Name">
+        <input type="email" class="contact" placeholder="Enter Email">
+        <textarea class="contact" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
     </div>
+</main>
 </body>
 </html>
