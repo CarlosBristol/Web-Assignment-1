@@ -47,12 +47,12 @@ main {
 }
 
 .Gallery {
-    margin: 10px;
-    float: left;
-    margin-left: 80px;
-}
-.caption {
-    color: white;
-    padding: 15px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 20% 0%;
+}
+
+h2 {
+    color: white;
 }
