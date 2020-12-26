@@ -30,9 +30,6 @@ nav ul {
     padding: 20px;
 }
 
-nav {
-    grid-area: nav;
-}
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
     background-size: cover;
@@ -40,19 +37,14 @@ body{
 }
 
 main {
-    font-size: 35px;
+    font-size: 20px;
     color: white;
-    text-align: center;
-    grid-area: main;
-}
-
-.Gallery {
     text-align: center;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 20% 0%;
 }
 
-h2 {
-    color: white;
+.interests {
+    padding-top: 100px;
 }
