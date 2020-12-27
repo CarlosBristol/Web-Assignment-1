@@ -1,0 +1,94 @@
+.shownav {
+    height: 20px;
+    width: 40px;
+    position: relative;
+    display: block;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+    }
+
+.shownav:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 7px;
+    left: 0px;
+    border-top: 0.2em solid #fff;
+    display: block;
+    }
+
+nav {
+    display: none;
+    background-color: lightcoral;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+nav:target {
+    display: block;
+    background-color: lightcoral;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+body {
+    background: url("Night\ Sky\ Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    font-size: 35px;
+    background-color: lightblue;
+    padding: 30px;
+    grid-area: header;
+}
+
+main {
+    text-align: center;
+}
+
+main p {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-align: justify;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    color: cyan;
+    font-family: arial;
+    text-align: center;
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+.Close {
+    color: darkblue;
+    font-size: 25px;
+    text-decoration: none;
+}
+

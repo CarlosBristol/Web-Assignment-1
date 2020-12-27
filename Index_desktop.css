@@ -4,6 +4,7 @@
 }
 
 header {
+    color: white;
     font-size: 35px;
     background-color: lightblue;
     padding: 30px;
@@ -34,8 +35,10 @@ nav {
 }
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 main {
@@ -52,4 +55,24 @@ body {
     grid-template-areas: "header header header header" 
                          "nav nav nav nav"                   
                          "main main main main";
+}
+
+.Close {
+    display: none;
+}
+
+ul li a:before {
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+ul li:hover a:before {
+    width: 50%;
+    transform: translateX(100%);
 }
