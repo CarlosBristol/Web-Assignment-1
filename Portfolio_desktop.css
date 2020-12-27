@@ -48,3 +48,7 @@ main {
 .interests {
     padding-top: 100px;
 }
+
+.Close {
+    display: none;
+}
