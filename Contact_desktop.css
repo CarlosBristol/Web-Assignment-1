@@ -5,6 +5,7 @@
 }
 
 header {
+    color: white;
     font-size: 35px;
     background-color: lightblue;
     padding: 30px;
@@ -116,4 +117,20 @@ textarea {
 
 .Close {
     display: none;
+}
+
+ul li a:before {
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+ul li:hover a:before {
+    width: 50%;
+    transform: translateX(100%);
 }
