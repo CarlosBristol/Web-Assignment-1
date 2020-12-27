@@ -90,3 +90,6 @@ p {
     list-style: none;
 }
 
+.Close {
+    display: none;
+}
