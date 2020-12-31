@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -30,26 +31,15 @@ nav ul {
     padding: 20px;
 }
 
-nav {
-    grid-area: nav;
-}
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    max-width: 100%;
 }
 
 main {
-    font-size: 35px;
+    font-size: 20px;
     color: white;
-    text-align: center;
-    grid-area: main;
-}
-
-.Close {
-    display: none;
 }
 
 ul li a:before {
@@ -66,4 +56,14 @@ ul li a:before {
 ul li:hover a:before {
     width: 50%;
     transform: translateX(100%);
+}
+
+h2 {
+    padding-top: 25px;
+}
+
+img {
+    padding:20px;
+    width: 50%;
+    height: 50%;
 }
