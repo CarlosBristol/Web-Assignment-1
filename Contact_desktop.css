@@ -9,7 +9,6 @@ header {
     font-size: 35px;
     background-color: lightblue;
     padding: 30px;
-    grid-area: header;
 }
 
 ul li a {
@@ -31,9 +30,6 @@ nav ul {
     padding: 20px;
 }
 
-nav {
-    grid-area: nav;
-}
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
     background-size: cover;
@@ -44,22 +40,12 @@ main {
     font-size: 35px;
     color: white;
     text-align: center;
-    grid-area: main;
 }
 
 h2 {
     margin-top: 150px;
     font-size: 50px;
     color: white;
-}
-
-body {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    grid-template-areas: "header header header header" 
-                         "nav nav nav nav"                   
-                         "main main main main";
 }
 
 main {  
