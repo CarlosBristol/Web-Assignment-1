@@ -9,7 +9,6 @@ header {
     font-size: 35px;
     background-color: lightblue;
     padding: 30px;
-    grid-area: header;
 }
 
 ul li a {
