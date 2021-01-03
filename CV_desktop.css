@@ -1,18 +1,22 @@
+/*Wildcard that removes the web page's default margin and padding*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Style for header*/
 header {
     color: white;
     background-color: lightblue;
     padding: 30px;
 }
 
+/*Style for Paragraph in header*/
 header p {
     font-size: 35px;
 }
 
+/*Style for Anchors in a li which is in a ul*/
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -20,6 +24,7 @@ ul li a {
     position: relative;
 }
 
+/*Style and Structure of ul in nav*/
 nav ul {
     list-style-type: none;
     display: grid;
@@ -32,19 +37,18 @@ nav ul {
     padding: 20px;
 }
 
+/*Background Image for Website*/
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
     background-size: cover;
     max-width: 100%;
 }
 
+/*Style and Structure for the main content*/
 main {
     font-size: 35px;
     color: white;
     text-align: center;
-}
-
-main {
     text-align: justify;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -54,36 +58,43 @@ main {
     margin-left: 50px;
 }
 
+/*Font size for h2*/
 h2 {
     font-size: 30px;
 }
 
+/*Font size for Paragraph*/
 p {
     font-size: 25px;
 }
 
+/*Styles for each list in skills class*/
 .skills ul li {
     text-align: center;
     list-style: none;
     font-size: 25px;
 }
 
+/*Styles for each list in interests class*/
 .interests ul li {
     text-align: center;
     list-style: none;
     font-size: 25px;
 }
 
+/*Styles for each list in experience class*/
 .experience ul li {
     font-weight: bold;
     font-size: 30px;
     list-style: none;
 }
 
+/*Remove X (Close Function) for burger in desktop mode */
 .Close {
     display: none;
 }
 
+/*Hover line animation effect on menus*/
 ul li a:before {
     content: '';
     width: 0px;

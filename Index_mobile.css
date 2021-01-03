@@ -1,3 +1,4 @@
+/*Style for top and bottom line of burger*/
 .shownav {
     height: 20px;
     width: 40px;
@@ -8,6 +9,7 @@
     border-radius: 5px;
     }
 
+/*Style for middle line of burger*/
 .shownav:before {
     content: '';
     position: absolute;
@@ -18,6 +20,7 @@
     display: block;
     }
 
+/*Style for nav (before burger is clicked)*/
 nav {
     display: none;
     background-color: lightcoral;
@@ -28,6 +31,7 @@ nav {
     height: 100vh;
 }
 
+/*Style for nav (when burger is clicked)*/
 nav:target {
     display: block;
     background-color: lightcoral;
@@ -38,6 +42,7 @@ nav:target {
     height: 100vh;
 }
 
+/*Background Image for Website*/
 body {
     background: url("Night\ Sky\ Wallpaper.jpg");
     background-repeat: no-repeat;
@@ -46,11 +51,13 @@ body {
     background-attachment: fixed;
 }
 
+/*Wildcard that removes the web page's default margin and padding*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Style for header*/
 header {
     color: white;
     font-size: 35px;
@@ -58,10 +65,12 @@ header {
     padding: 30px;
 }
 
+/*Align text to center with main*/
 main {
     text-align: center;
 }
 
+/*Style for Paragraph in main*/
 main p {
     font-size: 35px;
     color: white;
@@ -69,6 +78,7 @@ main p {
     text-align: justify;
 }
 
+/*Style for each list*/
 nav ul li {
     list-style-type: none;
     font-size: 20px;
@@ -78,6 +88,7 @@ nav ul li {
     padding: 20px;
 }
 
+/*Style for Anchors in a li which is in a ul*/
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -85,6 +96,7 @@ ul li a {
     position: relative;
 }
 
+/*Style for the X (Close feature to close bar menu)*/
 .Close {
     color: darkblue;
     font-size: 25px;

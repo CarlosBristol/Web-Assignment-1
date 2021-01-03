@@ -1,8 +1,10 @@
+/*Wildcard that removes the web page's default margin and padding*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Style for header*/
 header {
     color: white;
     font-size: 35px;
@@ -10,6 +12,7 @@ header {
     padding: 30px;
 }
 
+/*Style for Anchors in a li which is in a ul*/
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -17,6 +20,7 @@ ul li a {
     position: relative;
 }
 
+/*Style and Structure of ul in nav*/
 nav ul {
     list-style-type: none;
     display: grid;
@@ -29,6 +33,7 @@ nav ul {
     padding: 20px;
 }
 
+/*Background Image for Website*/
 body{
     background: url("Night\ Sky\ Wallpaper.jpg");
     background-repeat: no-repeat;
@@ -37,16 +42,19 @@ body{
     background-attachment: fixed;
 }
 
+/*Style for the main content*/
 main {
     font-size: 35px;
     color: white;
     text-align: center;
 }
 
+/*Remove X (Close Function) for burger in desktop mode */
 .Close {
     display: none;
 }
 
+/*Hover line animation effect on menus*/
 ul li a:before {
     content: '';
     width: 0px;
