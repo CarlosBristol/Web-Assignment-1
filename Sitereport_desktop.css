@@ -61,8 +61,11 @@ h2 {
     padding-top: 25px;
 }
 
-img {
+.screenshot {
     padding:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    height: 50%;
 }
+
