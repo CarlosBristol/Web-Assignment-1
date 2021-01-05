@@ -1,14 +1,37 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<!--Website Title and CSS for Sitereport Page-->
 <head>
+    <meta charset="UTF-8">
     <title>Sitereport</title>
+    <link rel="stylesheet" href="Sitereport_mobile.css" media="screen and (max-width: 1000px)" />
     <link rel="stylesheet" href="Sitereport_desktop.css" media="screen and (min-width: 1000px)" />
 </head>
+
 <body>
+
+    <!--Header of page, burger and validation icons-->
     <header>
-    <h>Sitereport</h>
+    <a href="#clicked" class = "shownav"></a>
+    <p>Sitereport</p>
+    <p>
+        <a href="http://www.w3.org/Icons/valid-html401">
+            <img alt="Valid HTML4.01" 
+                src="http://www.w3.org/Icons/valid-html401.png">
+        </a>
+    </p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" /></a>
+    </p>
     </header>   
 
-    <nav>
+    <!--ID that shows list of menu when burger is clicked in mobile version with a close feature-->
+    <nav id="clicked">
+        <a href="#" class="Close" >X</a>
         <ul>
             <li><a href="http://127.0.0.1:5500/Index.html" >Home Page</a></li>
             <li><a href="http://127.0.0.1:5500/Portfolio.html">Portfolio</a></li>
@@ -18,34 +41,35 @@
         </ul>
     </nav>
 
+    <!--Content of the Sitereport Page Website which has all the code, screenshot and report for this assignment.-->
     <main>
         <h2>Module Experience</h2>
         <p>Starting this module up, I did not have any kind of web coding knowledge so everything was new to me. It was more of an independent course where I had to figure things out on my own than people telling me the solution which was the most difficult part. However, it did help me fully understand the Module's Topics (what they do, why there are used and when you should not). Furthermore, the assistance I acquired from my lecturer, his videos, extra support session and my fellow coursemates allowed me to complete this assignment. In the end, I enjoyed experimenting with my website and how these additions/changes evolved it over time.  </p>
         
         <h2>Website Layout Design</h2>
         <p>I chose to design my website like this as I wanted to make it simple, clear and easy to understand for anyone viewing this site for quick navigation.</p>
-        <img src="Home Page Design.png" alt="Home Page Design" class="screenshot">
+        <img src="Home_Page_Design.png" alt="Home Page Design" class="screenshot">
         <p>This is the starting web layout for my Home Page which I kept the same with my other pages as shown below.</p>
-        <img src="Portfolio Design.png" alt="Portfolio Design" class="screenshot">
-        <img src="Contact Design.png" alt="Contact Design" class="screenshot">
-        <img src="CV Design.png" alt="CV Design" class="screenshot">
-        <img src="Sitereport Design.png" alt="Sitereport Design" class="screenshot">
+        <img src="Portfolio_Design.png" alt="Portfolio Design" class="screenshot">
+        <img src="Contact_Design.png" alt="Contact Design" class="screenshot">
+        <img src="CV_Design.png" alt="CV Design" class="screenshot">
+        <img src="Sitereport_Design.png" alt="Sitereport Design" class="screenshot">
         
         <h2>Website Pages Design</h2>
         <h2>Home Page</h2>
-        <img src="Home Page Full Design.png" alt="Home Page Full Design" class="screenshot">
+        <img src="Home_Page_Full_Design.png" alt="Home Page Full Design" class="screenshot">
         <p>With my Home Page, I just wanted it to only contain an image of myself with a brief info on who I am and what my website contains in the centre of the page.</p>
         
         <h2>Portfolio</h2>
-        <img src="Portfolio Full Design.png" alt="Portfolio Full Design" class="screenshot">
+        <img src="Portfolio_Full_Design.png" alt="Portfolio Full Design" class="screenshot">
         <p>With my Portfolio Page, I separated the screen to 3 grids so that each row will have 3 images (each image has a brief caption on what the image is).</p>
     
         <h2>Contact</h2>
-        <img src="Contact Full Design.png" alt="Contact Full Design" class="screenshot">
-        <p>With my Contact Page, I added 3 input fields (Name, Email and Message) also a submit button at the buttom which will launch my email when pressed.
+        <img src="Contact_Full_Design.png" alt="Contact Full Design" class="screenshot">
+        <p>With my Contact Page, I added 3 input fields (Name, Email and Message) also a submit button at the buttom which will launch my email when pressed. I removed the border as just having a line makes it more modern than the usual input boxes.
         
         <h2>CV</h2>
-        <img src="CV Full Design.png" alt="CV Full Design" class="screenshot">
+        <img src="CV_Full_Design.png" alt="CV Full Design" class="screenshot">
         <p>With my CV Page, I separated it into 2 grids to have 2 columns. I added my name, my image, list of skills, who am I, list of interests and experience. With the 2 grid columns it helped make it look more of a CV and not just everything in 1 line (e.g. like a word document) and looks much neater which is why I chose to make it like this.
     
         <h2>Coding and Development</h2>
@@ -152,6 +176,50 @@
         <img src="CV_Mobile_CSS_Code_3.png" alt="3rd code of CV Mobile CSS" class="screenshot">
         <img src="CV_Mobile_CSS_Code_4.png" alt="4th code of CV Mobile CSS" class="screenshot">
         <img src="CV_Mobile_CSS_Output_2.png" alt="Output of 3rd and 4th code of CV Mobile CSS" class="screenshot">
+
+        <h2>Extra Notes</h2>
+        <p>I chose font-sizes for my headings, header and paragraphs correspondingly as this was pleasing to me when I look at it (easy to interpret what the words say).</p>
+        <p>With the background colours, I like it to be light therefore cyan and lightcoral looked like a nice combination.</p>
+        <p>The "Night Sky" background image I used because I've been fascinated about space which is another reason why I chose 6 different space related images in my Portfolio page.</p>
+    
+        <h2>Errors</h2>
+        <p>I did not really have any serious errors when I was coding my website (they were mostly syntax errors and just missing lines of code). However the part I wanted to talk about is the burger menu.</p>
+        <img src="Index_Broken_Burger.png" alt="Broken Burger" class="screenshot">
+        <img src="Burger_Code_Missing_Line.png" alt="Code for Broken Burger" class="screenshot">
+        <p>Here, the middle part of the burger is all the way up the screen and stretched out horizontally. Thankfully, this was fixed easily by adding "position: relative;" in the shownav class.</p>
+        <img src="Burger_Added_Line.png" alt="Added missing line in shownav class" class="screenshot">
+        <img src="Index_Fixed_Burger.png" alt="Fixed Burger" class="screenshot">
+
+        <h2>Validation</h2>
+        <p>Home Page HTML, Desktop and Mobile CSS</p>
+        <img src="Index_HTML_Validated.png" alt="Validation of Home Page HTML" class="screenshot">
+        <img src="Index_Desktop_CSS_Validated.png" alt="Validation of Home Page Desktop CSS" class="screenshot">
+        <img src="Index_Mobile_CSS_Validated.png" alt="Validation of Home Page Mobile CSS" class="screenshot">
+        <p>Portfolio Page HTML, Desktop and Mobile CSS</p>
+        <img src="Portfolio_HTML_Validated.png" alt="Validation of Portfolio HTML" class="screenshot">
+        <img src="Portfolio_Desktop_CSS_Validated.png" alt="Validation of Portfolio Desktop CSS" class="screenshot">
+        <img src="Portfolio_Mobile_CSS_Validated.png" alt="Validation of Portfolio Mobile CSS" class="screenshot">
+        <p>Contact Page HTML, Desktop and Mobile CSS</p>
+        <img src="Contact_HTML_Validated.png" alt="Validation of Contact HTML" class="screenshot">
+        <img src="Contact_Desktop_CSS_Validated.png" alt="Validation of Contact Desktop CSS" class="screenshot">
+        <img src="Contact_Mobile_CSS_Validated.png" alt="Validation of Contact Mobile CSS" class="screenshot">
+        <p>CV Page HTML, Desktop and Mobile CSS</p>
+        <img src="CV_HTML_Validated.png" alt="Validation of CV HTML" class="screenshot">
+        <img src="CV_Desktop_CSS_Validated.png" alt="Validation of CV Desktop CSS" class="screenshot">
+        <img src="CV_Mobile_CSS_Validated.png" alt="Validation of CV Mobile CSS" class="screenshot">
+        <p>Sitereport Page HTML, Desktop and Mobile CSS</p>
+        <img src="Sitereport_HTML_Validated.png" alt="Validation of Sitereport HTML" class="screenshot">
+        <img src="Sitereport_Desktop_CSS_Validated.png" alt="Validation of Sitereport Desktop CSS" class="screenshot">
+        <img src="Sitereport_Mobile_CSS_Validated.png" alt="Validation of Sitereport Mobile CSS" class="screenshot">
+
+        <h2>References</h2>
+        <p>Adding hover animation on menus:</p>
+        <p>Codegrid."Cool Link Hover Effect | HTML & CSS."Online video clip. YouTube. Youtube, 27 Sept. 2017. Web. 10 Dec. 2020.</p>
+        <p>Adding burger in mobile css:</p>   
+        <p>Separating screen size versions using max/min width:</p>
+        <p>Butler, T. (2020). 20/21 Web Development (CSY1018-STD) , Topic 4 - Developing websites for mobile phones. Retrieved from Northampton University NILE: https://nile.northampton.ac.uk/ultra/courses/_109872_1/cl/outline</p>
+        <p>Using and getting familiar with GitHub:</p>
+        <p>Butler, T. (2020). 20/21 Web Development (CSY1018-STD) , Topic 6 - Version control. Retrieved from Northampton University NILE: https://nile.northampton.ac.uk/ultra/courses/_109872_1/cl/outline</p>
     </main>
 </body>
 </html>
